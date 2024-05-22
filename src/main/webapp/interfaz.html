@@ -1,0 +1,17 @@
+
+<!-- wallet.jsp -->
+<html>
+<head><title>Alke Wallet</title></head>
+<body>
+    <h1>Saldo Disponible:</h1>
+    <p><%= wallet.getBalance() %></p>
+    <form action="deposit" method="post">
+        <input type="text" name="amount" placeholder="Cantidad a depositar">
+        <input type="submit" value="Depositar">
+    </form>
+    <form action="withdraw" method="post">
+        <input type="text" name="amount" placeholder="Cantidad a retirar">
+        <input type="submit" value="Retirar">
+    </form>
+</body>
+</html>
